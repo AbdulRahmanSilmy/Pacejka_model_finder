@@ -2,19 +2,22 @@
 
 When creating a vehicle dynamics model is it necessary to take into account the effect of slip ratios on longitudinal forces. A common industry leading model exists called the pajecka model that maps the slip ratios and normal force to the longitudinal forces of a vehicle. However, the model has several parameters that needs to fit to a specific vehicle. 
 
-
+The equation for the pacejka model can be found [here](https://en.wikipedia.org/wiki/Hans_B._Pacejka).
 
 ## Achieving pacejka model parameters
 
 ### Steps
 
-- Set up the cost function as the RMSE of the measured longitudinal force against the calculated longitudinal force
-- Because of the complexcity of the pacejka model utilize numerical approximation of a gradient called the symmetric difference quotient 
-- Perform gradient descent based on the numerical approximation of gradient
+- Normalize the measured data point point values against its corresponding normal force values. This makes calculations easier and is possible because normal force is a multiplication factor in the pacejka model.
+- Set up the cost function as the RMSE of the measured longitudinal force against the calculated longitudinal force.
+- Because of the complexcity of the pacejka model utilize numerical approximation of a gradient called the symmetric difference quotient. 
+- Perform gradient descent based on the numerical approximation of gradient.
 
 ### The Gradient Descent Graph
 
-![alt text](https://github.com/AbdulRahmanSilmy/vehicle_dynamic_model/blob/main/standard%20error%20vs%20steps.jpg)
+<img src="https://github.com/AbdulRahmanSilmy/vehicle_dynamic_model/blob/main/RMSE%20vs%20steps.jpg" width="600" height="600" />
+
+
 
 ## Analysis of Performance
 
