@@ -2,7 +2,7 @@
 
 When creating a vehicle dynamics model is it necessary to take into account the effect of slip ratios on longitudinal forces. A common industry leading model exists called the pajecka model that maps the slip ratios and normal force to the longitudinal forces of a vehicle. However, the model has several parameters that needs to fit to a specific vehicle. 
 
-The equation for the pacejka model can be found [here](https://en.wikipedia.org/wiki/Hans_B._Pacejka).
+The code finding optimal parameters of the pacejka model can be found in this [matlab script.](https://github.com/AbdulRahmanSilmy/Pacejka_model_finder/blob/main/pacejka_para_optimizer.m).
 
 ## Achieving pacejka model parameters
 
