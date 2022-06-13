@@ -10,8 +10,8 @@ The code finding optimal parameters of the pacejka model can be found in this [m
 
 - Normalize the measured data point point values against its corresponding normal force values. This makes calculations easier and is possible because normal force is a multiplication factor in the pacejka model.
 - Set up the cost function as the RMSE of the measured longitudinal force against the calculated longitudinal force.
-- Because of the complexity of the pacejka model utilize numerical approximation of a gradient called the symmetric difference quotient. 
-- Perform gradient descent based on the numerical approximation of gradient.
+- Because of the complexity of the pacejka model I utilized numerical approximation of a gradient called the symmetric difference quotient. 
+- Performed gradient descent based on the numerical approximation of gradient.
 
 ### The Gradient Descent Graph
 
